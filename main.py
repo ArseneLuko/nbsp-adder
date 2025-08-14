@@ -10,7 +10,7 @@ GitHub: https://github.com/ArseneLuko
 
 import pyperclip
 
-def add_nbsp(text: str) -> str:
+def add_nbsp(text: list) -> str:
     for positon, word in enumerate(text):
         if len(word) == 1:
             text[positon] += '&nbsp;'
