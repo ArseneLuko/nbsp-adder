@@ -13,17 +13,29 @@ GitHub: https://github.com/ArseneLuko
 import pyperclip
 
 def add_nbsp(text: list) -> str:
-    for positon, word in enumerate(text):
+    for position, word in enumerate(text):
+        if not (position == len(text) - 1):
+            if len(word) == 1:
+                text[position] += '&nbsp;'
+            else:
+                text[position] += ' '
+
+    return ''.join(text)
+
+
+def one_letter_positions(text):
+    positions = tuple()
+    for position, word in enumerate(text):
         if len(word) == 1:
-            text[positon] += '&nbsp;'
-            next_word = text.pop(positon + 1)
-            text[positon] += next_word
-    
-    return ' '.join(text)
+            positions += (position, )
+
+    return positions
+
 
 def main():
     text = """Ve schránce nebyl vložen text."""
     text = pyperclip.paste().split(' ')
+    # positions = one_letter_positions(text)
     text = add_nbsp(text)
     pyperclip.copy(text)
 
