@@ -1,8 +1,10 @@
 """
-Skript vloží html entitu pro nedělitelnou mezeru '&nbsp;' na potřebná místa,
-zatím funguje pro slova o délce jednoho znaku. Do budoucna budou doplněny 
-další případy, kde je pottřeba použít nedělitelnou mezeru, viz:
+Skript vloží do textu html entitu pro nedělitelnou mezeru '&nbsp;'.
+
+Zatím funguje pro slova o délce jednoho znaku. Do budoucna budou doplněny 
+další případy, kde je potřeba použít nedělitelnou mezeru, viz:
 https://cs.wikipedia.org/wiki/Nezlomitelná_mezera#Využití
+
 Skript je psán primárně pro český jazyk.
 Autor: Lukáš Karásek / lukas@lukaskarasek.cz
 GitHub: https://github.com/ArseneLuko
