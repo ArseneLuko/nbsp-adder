@@ -8,6 +8,7 @@ https://cs.wikipedia.org/wiki/Nezlomitelná_mezera#Využití
 Skript je psán pro český jazyk.
 Autor: Lukáš Karásek / lukas@lukaskarasek.cz
 GitHub: https://github.com/ArseneLuko
+
 """
 
 import pyperclip
